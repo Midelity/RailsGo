@@ -6,17 +6,16 @@ class RegistrationsController < ApplicationController
     def create
         #render plain: params
         #render plain: params[:user]
-        render plain: "You data is MINE!!!"
-        # @user = User.new(params[:user_params])
-        # if @user.save
-        #     cookies[:user_id] = @user.id
-        #     redirect_to root_path, notice: "Sucessfully created an account"
-        # else
-        #     render :new, status: :unprocessable_entity
-        # end
+        #render plain: "You data is MINE!!!"
+        @user = User.new(user_params)
+        if @user.save
+            redirect_to root_path, notice: "Account created"
+        else 
+            render :new, status: :unprocessable_entity
+        end
     end
 
-    private
+    # private
 
     def user_params
         params.require(:user).permit(:email, :password, :password_confirmation)
