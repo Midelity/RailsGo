@@ -3,6 +3,11 @@
 Rails.application.routes.draw do
   get "about", to: "about#index"
 
+  get "chair", to: "chair#index"
+
+  get "keyboard", to: "keyboard#index"
+  
+
   get "password", to: "passwords#edit", as: :edit_password
   patch "password", to: "passwords#update"
 

@@ -13,3 +13,12 @@
  *= require_tree .
  *= require_self
  */
+
+.fixed {
+    
+    width: 200px;
+}
+.flex-item {
+    
+    flex-grow: 1;
+}
