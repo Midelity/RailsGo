@@ -42,16 +42,28 @@
   </div>
   <div class="col">
     <div class="card">
-      <a href="TARGET URL GOES HERE">
-      <img src="URL OF FIRST IMAGE GOES HERE" class="card-img-top" alt="..."
-         onmouseover="this.src='URL OF SECOND IMAGE GOES HERE';"
-         onmouseout="this.src='URL OF FIRST IMAGE GOES HERE';">
-      </a>
+    <%= image_tag("Keyboards/arc.jpg", class: "card-img-top", alt: "ARC") %>
       <div class="card-body">
-        <h5 class="card-title"></h5>
-        <p class="card-text">The Microsoft arc </p>
+        <h5 class="card-title">The Microsoft arc.</h5>
+        <div class="d-flex flex-row bd-highlight mb-1">
+      <div class="p-2 bd-highlight">
+        <span class="">Pros:</span>
+        <ul class="">      
+            <li><p>Excellent ergonomic design</p></li>
+            <li><p>Awesome battery life</p></li>
+            <li><p>Wrist rest is second to none</p></li>
+        </ul>
       </div>
-    <a href="" class="btn btn-primary"> Buy Now</a>
+      <div class="p-2 bd-highlight">
+        <span class="">Cons:</span>
+        <ul class="">
+            <li><p>No backlighting</p></li>
+            <li><p>A bit pricey</p></li>
+        </ul>
+      </div>
+     </div>
+     <a href="" class="btn btn-primary"> Buy Now</a>
+      </div>
     </div>
   </div>
 </div>

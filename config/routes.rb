@@ -7,7 +7,7 @@ Rails.application.routes.draw do
 
   get "keyboard", to: "keyboard#index"
   
-  get "table", to: "table#index"
+  get "desk", to: "desks#index"
 
   get "password", to: "passwords#edit", as: :edit_password
   patch "password", to: "passwords#update"
