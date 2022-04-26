@@ -13,10 +13,17 @@
     <%= javascript_importmap_tags %>
   </head>
   <body>
-  <%= render partial: "shared/navbar" %>
-  <div class="container">
-    <%=render partial: "shared/flash" %>
-    <%= yield %>
-  </div>
+    <div class="bg-light visually-hidden-focusable overflow-hidden">
+      <div class="container-xl">
+        <a id="skip-nav" class="d-inline-flex p-2 m-1 text-dark" href="#content">
+          Skip to Content
+        </a>
+      </div>
+    </div>
+    <%= render partial: "shared/navbar" %>
+    <div class="container">
+      <%=render partial: "shared/flash" %>
+      <%= yield %>
+    </div>
   </body>
 </html>

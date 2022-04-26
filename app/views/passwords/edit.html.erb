@@ -1,4 +1,7 @@
-<h1>Edit Password</h1>
+<% @title = "Edit Password" %>
+<div id="content">
+  <h1>Edit Password</h1>
+</div>
 
 <%= form_with model: Current.user, url: edit_password_path, local: true, data: { turbo: false }  do |form| %>
   <% if form.object.errors.any? %>

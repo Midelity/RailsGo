@@ -1,4 +1,7 @@
-<h1>Sign In</h1>
+<% @title = "Login" %>
+<div id="content">
+  <h1>Login</h1>
+</div>
 
 <%= form_with url: sign_in_path, local: true, data: { turbo: false }  do |form| %>
   <div class="mb-3">

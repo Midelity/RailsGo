@@ -1,5 +1,7 @@
-
-<h1>Forgot your password?</h1>
+<% @title = "Forgot Password" %>
+<div id="content">
+  <h1>Forgot your password?</h1>
+</div>
 
 <%= form_with url: password_reset_path, local: true, data: { turbo: false } do |form| %>
   <div class="mb-3">
