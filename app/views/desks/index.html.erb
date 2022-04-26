@@ -1,4 +1,9 @@
 <% @title = "Desks" %>
+<% content_for :head do %>
+    <meta name="Author" content="Max Bauer">
+    <meta name="Keywords" content="desks, ergonomics, adjustable desk, folding desk">
+    <meta name="Description" content="Tips on desk ergonomics for an office workstation.">
+<% end %>
 <div id="content" class="d-flex align-items-center justify-content-center">
     <h1>Ergonomics in Desks</h1>
 </div>
@@ -14,7 +19,7 @@
 </div>
 <div class="d-flex align-items-center justify-content-left">
     <section>
-        <h4>Desk height</h4>
+        <h3>Desk height</h3>
         <ul class="list-group list-group-flush">
             <li class="list-group-item">A desk with an adjustable height is preferable.</li>
             <li class="list-group-item">Position the desk at a height where your elbows are bent at 100-110 degrees.</li>
@@ -24,7 +29,7 @@
 </div>
 <div class="d-flex align-items-center justify-content-left">
     <section>
-        <h4>Desk setup</h4>
+        <h3>Desk setup</h3>
         <ul class="list-group list-group-flush">
             <li class="list-group-item">There should be enough room below the desk for your legs, with your feet flat on the ground or on a footrest. For more details, see our <%= link_to "chairs section", chair_path, class: "link-dark" %>.</li>
             <li class="list-group-item">If your desk has a hard edge, use some kind of padding on the edge.</li>
@@ -33,7 +38,7 @@
 </div>
 <div class="d-flex align-items-center justify-content-left">
     <section>
-        <h4>Desk layout</h4>
+        <h3>Desk layout</h3>
         <ul class="list-group list-group-flush">
             <li class="list-group-item">There should be enough space on your desk for the things you need. This may include a keyboard, mouse, telephone, monitor, etc.</li>
             <li class="list-group-item">Try to keep objects on your desk within reach.</li>
@@ -44,7 +49,7 @@
 </div>
 <div class="d-flex align-items-center justify-content-left">
     <section>
-        <h4>Choosing a desk</h4>
+        <h3>Choosing a desk</h3>
         <p>Keeping ergonomics in mind is important when choosing a desk, but personal requirements are most important. Personal requirements could be desk size, keyboard tray, shelf, desk hooks, etc.</p>
     </section>
 </div>
@@ -56,12 +61,12 @@
 <div class="row row-cols-1 row-cols-md-2 g-4">  
     <div class="col">
         <div class="card">
-        <%= image_tag("desks/fezibo-adjustable-desk.jpg", class: "card-img-top img-fluid", alt: "GreenForest Folding Desk") %>
+        <%= image_tag("desks/fezibo-adjustable-desk.jpg", class: "card-img-top img-fluid", title: "FEZIBO Adjustable Desk", alt: "FEZIBO Adjustable Desk") %>
             <div class="card-body">
-            <h5 class="card-title">FEZIBO Adjustable Desk</h5>
+            <h3 class="card-title">FEZIBO Adjustable Desk</h3>
                 <div class="d-flex flex-row bd-highlight mb-1">
                     <div class="p-2 bd-highlight">
-                        <span class="h6">Pros:</span>
+                        <p>Pros:</p>
                         <ul class="list-group">      
                             <li class="list-group-item">Keyboard tray</li>
                             <li class="list-group-item">Height adjustable</li>
@@ -71,7 +76,7 @@
                         </ul>
                     </div>
                     <div class="p-2 bd-highlight">
-                        <span class="h6">Cons:</span>
+                        <p>Cons:</p>
                         <ul class="list-group">
                             <li class="list-group-item">Expensive</li>
                         </ul>
@@ -84,12 +89,12 @@
 
     <div class="col">
         <div class="card">
-        <%= image_tag("desks/greenforest-folding-desk.jpg", class: "card-img-top img-fluid", alt: "GreenForest Folding Desk") %>
+        <%= image_tag("desks/greenforest-folding-desk.jpg", class: "card-img-top img-fluid", title: "GreenForest Folding Desk", alt: "GreenForest Folding Desk") %>
             <div class="card-body">
-            <h5 class="card-title">GreenForest Folding Desk</h5>
+            <h3 class="card-title">GreenForest Folding Desk</h3>
                 <div class="d-flex flex-row bd-highlight mb-1">
                     <div class="p-2 bd-highlight">
-                        <span class="h6">Pros:</span>
+                        <p>Pros:</p>
                         <ul class="list-group">      
                             <li class="list-group-item">Has a shelf</li>
                             <li class="list-group-item">Takes up little space</li>
@@ -98,7 +103,7 @@
                         </ul>
                     </div>
                     <div class="p-2 bd-highlight">
-                        <span class="h6">Cons:</span>
+                        <p>Cons:</p>
                         <ul class="list-group">
                             <li class="list-group-item">Small</li>
                             <li class="list-group-item">Not adjustable</li>

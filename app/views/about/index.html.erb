@@ -1,9 +1,15 @@
 <% @title = "About Us" %>
+<% content_for :head do %>
+    <meta name="Author" content="Brennhan Matyi, Jordan Duffy, Zachary Bickel, Max Bauer">
+    <meta name="Keywords" content="authors, about us, web development, web project">
+    <meta name="Description" content="Page about the authors of this website. Contains contact information and last updated information.">
+<% end %>
+
 <div id="content">
     <h1>About us</h1>
 </div>
 <div class="d-flex align-items-center justify-content-left">
-    <p>We are students at RCTC/WSU in a Web Development class.
+    <p>We are CS students at RCTC/WSU in a Web Development class.
        <br>This website is a result of a group project.</p>
 </div>
 
@@ -23,11 +29,13 @@
     <section>
         <h4>Contact info</h4>
         <ul>
-            <li>Brennhan's contact info: 123@123.com</li>
-            <li>Jordan's contact info: 123@123.com</li>
-            <li>Zach's contact info: 123@123.com</li>
-            <li>Max's contact info: example@exapmle.com</li>
+            <li>Brennhan: brennhan.matyi@go.winona.edu</li>
+            <li>Zach: zachary.bickel@go.winona.edu</li>
+            <li>Max: Maximilien.Bauer@go.winona.edu</li>
         </ul>
     </section>
 </div>
 
+<div class="d-flex align-items-center justify-content-left">
+    <h4>Last Updated: April 25, 2022</h4>
+</div>
