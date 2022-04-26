@@ -15,7 +15,7 @@
   <body>
     <div class="bg-light visually-hidden-focusable overflow-hidden">
       <div class="container-xl">
-        <a id="skip-nav" class="d-inline-flex p-2 m-1 text-dark" href="#content">
+        <a id="skip-nav" class="d-inline-flex p-2 m-1 text-dark" href="#main">
           Skip to Content
         </a>
       </div>
@@ -23,7 +23,9 @@
     <%= render partial: "shared/navbar" %>
     <div class="container">
       <%=render partial: "shared/flash" %>
-      <%= yield %>
+      <div id="main">
+        <%= yield %>
+      </div>
     </div>
   </body>
 </html>
